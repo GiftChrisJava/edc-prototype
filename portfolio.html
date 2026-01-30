@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Portfolio - Extreme Digital Creations</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script
+        id="tailwind-config"> tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary": "#004985", "background-light": "#f5f7f8", "background-dark": "#0f1a23", }, fontFamily: { "display": ["Inter", "sans-serif"] }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, }, }, } </script>
+    <style>
+        /* Custom Masonry support since Tailwind Grid doesn't natively do true masonry without JS or plugins */
+        .masonry-grid {
+            column-count: 1;
+            column-gap: 1.5rem;
+        }
+
+        @media (min-width: 640px) {
+            .masonry-grid {
+                column-count: 2;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .masonry-grid {
+                column-count: 3;
+            }
+        }
+
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Smooth hover overlay transition */
+        .group:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay {
+            transition: opacity 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light font-display text-[#0c151d] overflow-x-hidden min-h-screen flex flex-col">
+    <!-- Top Navigation -->
+    <header class="sticky top-0 z-50 w-full bg-background-light/90 backdrop-blur-md border-b border-[#e6eef4]">
+        <div class="px-4 md:px-10 py-4 flex items-center justify-between max-w-[1440px] mx-auto">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 text-primary flex items-center justify-center"> <span
+                        class="material-symbols-outlined text-3xl">diamond</span> </div>
+                <h2 class="text-[#0c151d] text-lg font-bold leading-tight tracking-tight">Extreme Digital Creations</h2>
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">Home</a>
+                    <a href="services.html" class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">Services</a>
+                    <a href="about.html" class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">About</a>
+                    <a href="portfolio.html" class="text-primary text-sm font-bold">Portfolio</a>
+                    <a href="contact.html" class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">Contact</a>
+                </nav>
+            <div class="hidden md:block"> <a href="contact.html"
+                    class="flex cursor-pointer items-center justify-center rounded-lg h-10 px-6 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold shadow-sm">Get a Quote</a> </div>
+            <div class="md:hidden text-slate-800"> <span class="material-symbols-outlined text-3xl">menu</span> </div>
+        </div>
+    </header>
+    <main class="flex-1 w-full max-w-[1440px] mx-auto px-4 md:px-10 py-12 flex flex-col"> <!-- Hero Section -->
+        <section class="mb-16 max-w-4xl">
+            <h1 class="text-slate-900 text-5xl md:text-6xl font-black leading-tight tracking-[-0.033em] mb-6"> Crafting
+                Digital <br /> <span class="text-primary">Excellence</span> in Malawi </h1>
+            <p class="text-slate-600 text-lg md:text-xl font-normal leading-relaxed max-w-2xl"> Explore our selected
+                projects across branding, web design, and marketing. We build premium digital experiences for
+                forward-thinking companies. </p>
+        </section> <!-- Filters -->
+        <section
+            class="mb-12 sticky top-[73px] z-40 bg-background-light py-4 -mx-4 px-4 md:mx-0 md:px-0 border-b md:border-none border-slate-200 md:bg-transparent md:static">
+            <div class="flex gap-3 overflow-x-auto pb-2 md:pb-0 scrollbar-hide"> <button
+                    class="shrink-0 flex items-center justify-center rounded-full bg-primary text-white px-6 py-2.5 text-sm font-medium transition-transform active:scale-95 shadow-md">
+                    All Projects </button> <button
+                    class="shrink-0 flex items-center justify-center rounded-full bg-white border border-slate-200 text-slate-600 hover:border-primary hover:text-primary px-6 py-2.5 text-sm font-medium transition-all active:scale-95">
+                    Branding </button> <button
+                    class="shrink-0 flex items-center justify-center rounded-full bg-white border border-slate-200 text-slate-600 hover:border-primary hover:text-primary px-6 py-2.5 text-sm font-medium transition-all active:scale-95">
+                    Web Development </button> <button
+                    class="shrink-0 flex items-center justify-center rounded-full bg-white border border-slate-200 text-slate-600 hover:border-primary hover:text-primary px-6 py-2.5 text-sm font-medium transition-all active:scale-95">
+                    Digital Marketing </button> <button
+                    class="shrink-0 flex items-center justify-center rounded-full bg-white border border-slate-200 text-slate-600 hover:border-primary hover:text-primary px-6 py-2.5 text-sm font-medium transition-all active:scale-95">
+                    Video Production </button> </div>
+        </section> <!-- Masonry Grid -->
+        <section class="masonry-grid w-full"> <!-- Item 1: Large Landscape -->
+            <div
+                class="masonry-item group relative rounded-xl overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition-shadow duration-300">
+                <div class="aspect-[4/3] w-full bg-gray-200"> <img alt="Financial data dashboard on a laptop screen"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                        data-alt="Modern finance dashboard interface displayed on a laptop"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM67NcGdRbNBJ1rJ980lrYfD2Nfax4nKdxpjagotHrNT3FIZ0I2TmrxvBsIkURM8iXHb_GE0lkt1Nhh_yeUSvibASSp2zs3F7fB87-oq9B0mYq0KnPHRNPYsoI-1-zslJ7180Ey_EE-RF-CZ5F0zM_-OyATihR1Se1eJmf-atOy_dvkE3hY4DbcOki7LPuXa7blOXngtTHi2obQEEMlxPHBZ6gt_K7GiVbxLYmdpNWYsKvcJbCyEjMBwS3fcgHzIspDNAz3DfoyGAC" />
+                </div> <!-- Overlay -->
+                <div class="overlay absolute inset-0 bg-primary/90 opacity-0 flex flex-col justify-end p-8"> <span
+                        class="text-white/80 text-xs font-bold uppercase tracking-wider mb-2">Web Development</span>
+                    <h3 class="text-white text-2xl font-bold leading-tight">Lilongwe Finance App</h3>
+                    <div class="mt-4 flex items-center gap-2 text-white font-medium text-sm"> <span>View Case
+                            Study</span> <span class="material-symbols-outlined text-lg">arrow_forward</span> </div>
+                </div>
+            </div> <!-- Item 2: Portrait -->
+            <div
+                class="masonry-item group relative rounded-xl overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition-shadow duration-300">
+                <div class="aspect-[3/4] w-full bg-gray-200"> <img alt="Energetic branding event with colorful lights"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                        data-alt="Colorful energetic branding event atmosphere"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWoxNKxq-sPrsOEPTwzJZxAjhsKNgtA8PxOhyIExS6yEW070QNL93jVICjnDleGEil6Ta7bjcmO-Y16GieUZvBMTowr5VYfwKbXe7C0Br1JIYf50jRv-6n2E5xCLBQ8qT72RjC0fXnCcK0kHjD-uhuywJKGSlUKLFx6VsmXv_XRFmAhn9JrLSZ-vpFDbHdoszPii4f9MsOY-6xXlmqjXUsBP2bTFoIRf_vxhCbGJ2WBTZJOQ9VOoYmfMlVMy1fn_rokgv5ABh875Oe" />
+                </div> <!-- Overlay -->
+                <div class="overlay absolute inset-0 bg-primary/90 opacity-0 flex flex-col justify-end p-8"> <span
+                        class="text-white/80 text-xs font-bold uppercase tracking-wider mb-2">Branding</span>
+                    <h3 class="text-white text-2xl font-bold leading-tight">M-Fest Identity 2024</h3>
+                    <div class="mt-4 flex items-center gap-2 text-white font-medium text-sm"> <span>View Case
+                            Study</span> <span class="material-symbols-outlined text-lg">arrow_forward</span> </div>
+                </div>
+            </div> <!-- Item 3: Square -->
+            <div
+                class="masonry-item group relative rounded-xl overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition-shadow duration-300">
+                <div class="aspect-square w-full bg-gray-200"> <img
+                        alt="AgriTech mobile application interface showing crop growth"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                        data-alt="Mobile app interface for agricultural monitoring"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKlx8dWmRLImR9BKRipKuGxpwPuFfzppKia3z3GapnBL9jSibIp89PiRFJecyrVeCh5ImYVkMHPPNFeVGBK20TrJCKEt3RLkA5m6AqBP8ZMB51iUvuD8Z-6xtYoQUK7n0SOYbAhjbvNn12pxO6kzJ4c4-NeaAnGxDRmRVs96-QcsCY_RUeH0LlPScjqFcBQdfv2E9d5WTidvenoyGR0ys7Cg6UKCKcDGjlPKq8dL2mds58mh-XwMGUkogn8lts0Td9_MJrI2tlkH0Z" />
+                </div> <!-- Overlay -->
+                <div class="overlay absolute inset-0 bg-primary/90 opacity-0 flex flex-col justify-end p-8"> <span
+                        class="text-white/80 text-xs font-bold uppercase tracking-wider mb-2">App Development</span>
+                    <h3 class="text-white text-2xl font-bold leading-tight">AgriTech Solutions</h3>
+                    <div class="mt-4 flex items-center gap-2 text-white font-medium text-sm"> <span>View Case
+                            Study</span> <span class="material-symbols-outlined text-lg">arrow_forward</span> </div>
+                </div>
+            </div> <!-- Item 4: Tall Portrait -->
+            <div
+                class="masonry-item group relative rounded-xl overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition-shadow duration-300">
+                <div class="aspect-[9/16] w-full bg-gray-200"> <img alt="Fashion model wearing retail clothing"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                        data-alt="Fashion campaign photo for retail brand"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh_bhTKav8qrgjHDUjM1jci0TdzRHUWiOUFXHj4sFuo27_cJ4egU2t0pa3FZmIHB8bg18FcrzA-VNqCUUCKNz5clmze-Or8FnO2-tWNJyrTwr9W30iUz14Tl3ThB1yA52fgXOWAqzomeQlOzgKthk6S8199jBEjT4RzC88yErFItOvZlULY9_CDC4QCYcbbQF0GBrA6zSyDR2x-hl1R__PKaXp4QEZ3LJTJ5NmUpkJplud0_67AMrbqatTWv8edcijVI3OiIEcG8Cl" />
+                </div> <!-- Overlay -->
+                <div class="overlay absolute inset-0 bg-primary/90 opacity-0 flex flex-col justify-end p-8"> <span
+                        class="text-white/80 text-xs font-bold uppercase tracking-wider mb-2">Marketing Campaign</span>
+                    <h3 class="text-white text-2xl font-bold leading-tight">Blantyre Retail Fashion</h3>
+                    <div class="mt-4 flex items-center gap-2 text-white font-medium text-sm"> <span>View Case
+                            Study</span> <span class="material-symbols-outlined text-lg">arrow_forward</span> </div>
+                </div>
+            </div> <!-- Item 5: Landscape -->
+            <div
+                class="masonry-item group relative rounded-xl overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition-shadow duration-300">
+                <div class="aspect-video w-full bg-gray-200"> <img alt="Beautiful Lake Malawi beach scene"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                        data-alt="Serene beach landscape of Lake Malawi" data-location="Lake Malawi"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-0NXBPAHx7TRlUadCKGcItr91TMRn37XXgbUXcfTxZkwkJF6tfh6rg93wpZNMvi2Rxv-ImVqEak3gOkESLescJeOAl1ht1BhgGH3RHLsw3Yb5h8pKwvQvpBcBCZwwuIhO6eAQ1JVKyhCge4PGdJ9xbLY-CxeLz2OQExgJ7z8HmN8dwaVGQOwixbpHgUYVq-T0yaCUq4_oNGOuimov6AIQNSkJADxR_eqpLbXAPXNpMoM-VYs-HzUbV_ziKG5JoEEcgPBgALH3jSLZ" />
+                </div> <!-- Overlay -->
+                <div class="overlay absolute inset-0 bg-primary/90 opacity-0 flex flex-col justify-end p-8"> <span
+                        class="text-white/80 text-xs font-bold uppercase tracking-wider mb-2">Video Production</span>
+                    <h3 class="text-white text-2xl font-bold leading-tight">Visit Malawi Tourism Ad</h3>
+                    <div class="mt-4 flex items-center gap-2 text-white font-medium text-sm"> <span>Watch Video</span>
+                        <span class="material-symbols-outlined text-lg">play_circle</span>
+                    </div>
+                </div>
+            </div> <!-- Item 6: Square -->
+            <div
+                class="masonry-item group relative rounded-xl overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition-shadow duration-300">
+                <div class="aspect-square w-full bg-gray-200"> <img alt="Minimalist graphic design poster"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                        data-alt="Abstract minimalist graphic design poster"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQU6W_sqa-XFehysSsKN2x7gz5jg_ikG6_FM4vHIqbuPhwKLDleZuiNIsmG0Alrjc-NYQIKcK1mLMs6Xacut-y_OQi8fnNSYSu00ZrnEeG0_izhVQH8K2fnSrUbMT5KlwapZHP5IAUuYv7_0t2yeU3EawEk8VOGfbBr_3zE-dnormruI3mB2VQrexPYQe2uWVOI8gjaOS-bmV1hR4SeWccnjTBq_vUVBx6uEzHhr_eF04INnCNkVHb2SBzzW9KytavbJKGtFiNGimr" />
+                </div> <!-- Overlay -->
+                <div class="overlay absolute inset-0 bg-primary/90 opacity-0 flex flex-col justify-end p-8"> <span
+                        class="text-white/80 text-xs font-bold uppercase tracking-wider mb-2">Branding</span>
+                    <h3 class="text-white text-2xl font-bold leading-tight">Eco-Pack Rebrand</h3>
+                    <div class="mt-4 flex items-center gap-2 text-white font-medium text-sm"> <span>View Case
+                            Study</span> <span class="material-symbols-outlined text-lg">arrow_forward</span> </div>
+                </div>
+            </div>
+        </section> <!-- Load More -->
+        <div class="mt-16 flex justify-center"> <button
+                class="group flex items-center gap-2 px-8 py-3 rounded-lg border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 font-bold text-sm uppercase tracking-wide">
+                Load More Projects <span class="material-symbols-outlined group-hover:animate-bounce">expand_more</span>
+            </button> </div>
+    </main> <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200">
+        <div class="max-w-[1440px] mx-auto px-4 md:px-10 py-12 md:py-20">
+            <div class="flex flex-col md:flex-row justify-between gap-12">
+                <div class="flex flex-col gap-6 max-w-sm">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 text-primary flex items-center justify-center"> <span
+                                class="material-symbols-outlined text-3xl">diamond</span> </div>
+                        <h2 class="text-[#0c151d] text-lg font-bold">Extreme Digital Creations</h2>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed"> We help ambitious businesses in Malawi and beyond grow
+                        through strategic design, development, and digital marketing. </p>
+                </div>
+                <div class="flex flex-wrap gap-12 md:gap-24">
+                    <div class="flex flex-col gap-4">
+                        <h4 class="text-[#0c151d] font-bold text-sm uppercase tracking-wider">Company </h4> <a
+                            class="text-slate-600 hover:text-primary transition-colors" href="about.html">About Us</a>
+                        <a class="text-slate-600 hover:text-primary transition-colors" href="team.html">Careers</a> <a
+                            class="text-slate-600 hover:text-primary transition-colors" href="contact.html">Contact</a>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h4 class="text-[#0c151d] font-bold text-sm uppercase tracking-wider">Services </h4> <a
+                            class="text-slate-600 hover:text-primary transition-colors" href="services.html">Web
+                            Development</a> <a class="text-slate-600 hover:text-primary transition-colors"
+                            href="#">Branding</a> <a class="text-slate-600 hover:text-primary transition-colors"
+                            href="services.html">Digital Marketing</a>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h4 class="text-[#0c151d] font-bold text-sm uppercase tracking-wider">Connect </h4>
+                        <div class="flex gap-4"> <a
+                                class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all"
+                                href="#"> <!-- Replace with social icons if needed, using material for now --> <span
+                                    class="material-symbols-outlined text-lg">public</span> </a> <a
+                                class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all"
+                                href="#"> <span class="material-symbols-outlined text-lg">mail</span> </a> </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="mt-16 pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+                <p>© 2026 Extreme Digital Creations. All rights reserved.</p>
+                <div class="flex gap-6"> <a class="hover:text-slate-800" href="#">Privacy Policy</a> <a
+                        class="hover:text-slate-800" href="#">Terms of Service</a> </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Home - Extreme Digital Creations</title> <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" /> <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script
+        id="tailwind-config"> tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary": "#004985", "accent": "#C31718", "background-light": "#f5f7f8", "background-dark": "#0f1a23", }, fontFamily: { "display": ["Inter", "sans-serif"] }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, }, }, } </script>
+</head>
+
+<body class="bg-background-light text-slate-900 font-display">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden"> <!-- Navigation -->
+        <header
+            class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 bg-white/95 backdrop-blur-sm px-6 py-3 lg:px-40">
+            <div class="flex items-center gap-4 text-primary">
+                <div class="size-8 text-primary"> <svg class="w-full h-full" fill="none" stroke="currentColor"
+                        stroke-width="1.5" viewbox="0 0 24 24">
+                        <path
+                            d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg> </div>
+                <h2 class="text-slate-900 text-lg font-bold leading-tight tracking-tight">Extreme Digital Creations</h2>
+            </div> <!-- Desktop Menu -->
+            <div class="hidden lg:flex flex-1 justify-end gap-8 items-center">
+                <nav class="flex items-center gap-9">
+                    <a href="index.html" class="text-primary text-sm font-bold">Home</a>
+                    <a href="services.html" class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">Services</a>
+                    <a href="about.html" class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">About</a>
+                    <a href="portfolio.html" class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">Portfolio</a>
+                    <a href="contact.html" class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">Contact</a>
+                </nav> <a href="contact.html"
+                    class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-accent text-white hover:bg-red-700 transition-colors text-sm font-bold leading-normal tracking-wide shadow-sm">
+                    <span class="truncate">Get Started</span>
+                </a>
+            </div> <!-- Mobile Menu Icon (Placeholder) --> <button class="lg:hidden text-slate-900"> <span
+                    class="material-symbols-outlined">menu</span> </button>
+        </header>
+        <main class="flex-1"> <!-- Hero Section -->
+            <section class="relative px-6 py-12 lg:px-40 lg:py-20 bg-white">
+                <div class="mx-auto max-w-[1280px]">
+                    <div class="flex flex-col-reverse lg:flex-row gap-10 items-center"> <!-- Content -->
+                        <div class="flex flex-col gap-6 flex-1 text-center lg:text-left">
+                            <h1 class="text-slate-900 text-4xl lg:text-6xl font-black leading-[1.1] tracking-tight">
+                                Leading Digital &amp; Creative Agency in Malawi </h1>
+                            <p class="text-slate-600 text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0"> Transforming
+                                businesses through innovative digital strategies, corporate branding, and robust web
+                                development solutions tailored for growth. </p>
+                            <div class="flex flex-wrap justify-center lg:justify-start gap-4 mt-2"> <a
+                                    href="contact.html"
+                                    class="flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-accent text-white hover:bg-red-700 transition-colors text-base font-bold shadow-md">Get
+                                    Started</a> <a href="portfolio.html"
+                                    class="flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-transparent border-2 border-primary text-primary hover:bg-primary/5/10 transition-colors text-base font-bold">View
+                                    Our Work</a> </div>
+                        </div> <!-- Image -->
+                        <div class="w-full flex-1">
+                            <div class="relative w-full aspect-[4/3] lg:aspect-square max-h-[500px] rounded-2xl overflow-hidden shadow-2xl"
+                                data-alt="Modern creative agency team working in an open office with computers and whiteboards"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDhTdGEDYMhXJTstah3VxG4QP0DeiQlBHuDPViKOVwa48wpTt7OI2HbSOCN-ZyUfn3raswFWggJcYrfwqR111_ee3dVEmw-Fg0APAFpJa-0REkYhm2VTNl-ch-YVq_aXd4hgJjwwN_-vif9kAvOfoF0VL4MkQuPVV2qI5ttGACMckkKZuWfDKPavhrMW4Ad7CMdvkssMAWpbqvXbbe0ZzAyXLIa2Yu1tVDk3MQ080zo7jta6YrAxkWILXulDHTqUGfzLorHf5hQlaIA'); background-size: cover; background-position: center;">
+                                <div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- Stats Bar -->
+            <section class="bg-slate-50 border-y border-slate-200">
+                <div class="px-6 lg:px-40 py-10">
+                    <div class="mx-auto max-w-[1280px]">
+                        <div
+                            class="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-slate-200">
+                            <div class="flex flex-col items-center justify-center p-4"> <span
+                                    class="text-5xl font-black text-primary">4+</span> <span
+                                    class="text-slate-600 font-medium mt-2">Years of Experience</span> </div>
+                            <div class="flex flex-col items-center justify-center p-4"> <span
+                                    class="text-5xl font-black text-primary">800+</span> <span
+                                    class="text-slate-600 font-medium mt-2">Projects Delivered</span> </div>
+                            <div class="flex flex-col items-center justify-center p-4"> <span
+                                    class="text-5xl font-black text-primary">150+</span> <span
+                                    class="text-slate-600 font-medium mt-2">Happy Clients</span> </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- Services Section -->
+            <section class="px-6 py-16 lg:px-40 bg-background-light">
+                <div class="mx-auto max-w-[1280px]">
+                    <div class="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
+                        <div> <span class="text-accent font-bold uppercase tracking-wider text-sm">What we do</span>
+                            <h2 class="text-slate-900 text-3xl lg:text-4xl font-bold mt-2">Our Services </h2>
+                        </div> <a class="text-primary font-bold hover:underline flex items-center gap-1 group" href="#">
+                            View all services <span
+                                class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"> <!-- Card 1 -->
+                        <div
+                            class="group flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                            <div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-3xl">brush</span>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-slate-900 text-xl font-bold">Graphic Design</h3>
+                                <p class="text-slate-500 text-sm leading-relaxed"> Creative visual solutions for your
+                                    brand identity, marketing materials, and digital assets. </p>
+                            </div>
+                            <div class="mt-auto pt-4"> <span
+                                    class="text-sm font-bold text-slate-900 group-hover:text-accent transition-colors flex items-center gap-2">
+                                    Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                                </span> </div>
+                        </div> <!-- Card 2 -->
+                        <div
+                            class="group flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                            <div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-3xl">code</span>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-slate-900 text-xl font-bold">Web Development</h3>
+                                <p class="text-slate-500 text-sm leading-relaxed"> Robust, scalable, and secure websites
+                                    tailored to your specific business needs. </p>
+                            </div>
+                            <div class="mt-auto pt-4"> <span
+                                    class="text-sm font-bold text-slate-900 group-hover:text-accent transition-colors flex items-center gap-2">
+                                    Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                                </span> </div>
+                        </div> <!-- Card 3 -->
+                        <div
+                            class="group flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                            <div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-3xl">trending_up</span>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-slate-900 text-xl font-bold">Digital Marketing</h3>
+                                <p class="text-slate-500 text-sm leading-relaxed"> Strategic SEO, social media, and PPC
+                                    campaigns to grow your online presence. </p>
+                            </div>
+                            <div class="mt-auto pt-4"> <span
+                                    class="text-sm font-bold text-slate-900 group-hover:text-accent transition-colors flex items-center gap-2">
+                                    Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                                </span> </div>
+                        </div> <!-- Card 4 -->
+                        <div
+                            class="group flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                            <div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-3xl">domain</span>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-slate-900 text-xl font-bold">Corporate Branding</h3>
+                                <p class="text-slate-500 text-sm leading-relaxed"> Building strong corporate identities
+                                    that leave a lasting impression on your clients. </p>
+                            </div>
+                            <div class="mt-auto pt-4"> <span
+                                    class="text-sm font-bold text-slate-900 group-hover:text-accent transition-colors flex items-center gap-2">
+                                    Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                                </span> </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- Why Choose Us -->
+            <section class="px-6 py-16 lg:px-40 bg-white">
+                <div class="mx-auto max-w-[1280px]">
+                    <div class="text-center mb-12"> <span
+                            class="text-accent font-bold uppercase tracking-wider text-sm">Our Values</span>
+                        <h2 class="text-slate-900 text-3xl lg:text-4xl font-bold mt-2">Why Choose Us </h2>
+                        <p class="text-slate-600 mt-4 max-w-2xl mx-auto"> We combine local market understanding with
+                            global design standards to deliver exceptional results. </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="flex flex-col items-center text-center gap-3">
+                            <div class="size-16 rounded-full bg-slate-100 flex items-center justify-center mb-2"> <span
+                                    class="material-symbols-outlined text-3xl text-primary">groups</span> </div>
+                            <h3 class="text-lg font-bold text-slate-900">Expert Team</h3>
+                            <p class="text-sm text-slate-600">Skilled professionals dedicated to your success.</p>
+                        </div>
+                        <div class="flex flex-col items-center text-center gap-3">
+                            <div class="size-16 rounded-full bg-slate-100 flex items-center justify-center mb-2"> <span
+                                    class="material-symbols-outlined text-3xl text-primary">schedule</span> </div>
+                            <h3 class="text-lg font-bold text-slate-900">On-Time Delivery</h3>
+                            <p class="text-sm text-slate-600">We respect deadlines and deliver quality on time.</p>
+                        </div>
+                        <div class="flex flex-col items-center text-center gap-3">
+                            <div class="size-16 rounded-full bg-slate-100 flex items-center justify-center mb-2"> <span
+                                    class="material-symbols-outlined text-3xl text-primary">lightbulb</span> </div>
+                            <h3 class="text-lg font-bold text-slate-900">Creative Solutions</h3>
+                            <p class="text-sm text-slate-600">Innovative approaches to solve complex problems.</p>
+                        </div>
+                        <div class="flex flex-col items-center text-center gap-3">
+                            <div class="size-16 rounded-full bg-slate-100 flex items-center justify-center mb-2"> <span
+                                    class="material-symbols-outlined text-3xl text-primary">support_agent</span> </div>
+                            <h3 class="text-lg font-bold text-slate-900">24/7 Support</h3>
+                            <p class="text-sm text-slate-600">Always available to assist with your digital needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- Partners / Trust Section -->
+            <section class="border-t border-slate-200 bg-slate-50 py-12 px-6 lg:px-40">
+                <div class="mx-auto max-w-[1280px]">
+                    <p class="text-center text-slate-500 font-medium mb-8 uppercase text-xs tracking-widest">Trusted by
+                        leading companies in Malawi</p>
+                    <div
+                        class="flex flex-wrap justify-center items-center gap-8 lg:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                        <!-- Partner Logos Placeholder - Using colored boxes with text for demo as per instructions not to use external random images unless data-alt provided -->
+                        <div
+                            class="h-10 w-32 bg-slate-300 rounded flex items-center justify-center text-xs font-bold text-slate-500">
+                            BANK CORP</div>
+                        <div
+                            class="h-10 w-32 bg-slate-300 rounded flex items-center justify-center text-xs font-bold text-slate-500">
+                            TELECOM</div>
+                        <div
+                            class="h-10 w-32 bg-slate-300 rounded flex items-center justify-center text-xs font-bold text-slate-500">
+                            INSURE CO</div>
+                        <div
+                            class="h-10 w-32 bg-slate-300 rounded flex items-center justify-center text-xs font-bold text-slate-500">
+                            MALAWI NGO</div>
+                        <div
+                            class="h-10 w-32 bg-slate-300 rounded flex items-center justify-center text-xs font-bold text-slate-500">
+                            RETAIL LTD</div>
+                    </div>
+                </div>
+            </section>
+        </main> <!-- Footer -->
+        <footer class="bg-[#0c151d] text-slate-400 py-12 px-6 lg:px-40 border-t border-slate-800">
+            <div class="mx-auto max-w-[1280px]">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8"> <!-- Brand -->
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-center gap-2 text-white">
+                            <div class="size-6 text-white"> <svg class="w-full h-full" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" viewbox="0 0 24 24">
+                                    <path
+                                        d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg> </div>
+                            <h2 class="text-lg font-bold">Extreme Digital Creations</h2>
+                        </div>
+                        <p class="text-sm"> Your partner in digital transformation. We build brands that matter and
+                            websites that perform. </p>
+                    </div> <!-- Links -->
+                    <div class="flex flex-col gap-2">
+                        <h4 class="text-white font-bold mb-2">Company</h4> <a
+                            class="hover:text-white transition-colors text-sm" href="about.html">About Us</a> <a
+                            class="hover:text-white transition-colors text-sm" href="team.html">Careers</a> <a
+                            class="hover:text-white transition-colors text-sm" href="portfolio.html">Portfolio</a> <a
+                            class="hover:text-white transition-colors text-sm" href="contact.html">Contact</a>
+                    </div> <!-- Services -->
+                    <div class="flex flex-col gap-2">
+                        <h4 class="text-white font-bold mb-2">Services</h4> <a
+                            class="hover:text-white transition-colors text-sm" href="services.html">Web Development</a>
+                        <a class="hover:text-white transition-colors text-sm" href="services.html">Graphic Design</a> <a
+                            class="hover:text-white transition-colors text-sm" href="services.html">Digital
+                            Marketing</a> <a class="hover:text-white transition-colors text-sm"
+                            href="services.html">Consulting</a>
+                    </div> <!-- Contact -->
+                    <div class="flex flex-col gap-2">
+                        <h4 class="text-white font-bold mb-2">Contact Us</h4>
+                        <p class="text-sm">Lilongwe, Malawi</p>
+                        <p class="text-sm">hello@extremedigital.mw</p>
+                        <p class="text-sm">+265 999 123 456</p>
+                        <div class="flex gap-4 mt-2"> <!-- Social Icons --> <a
+                                class="hover:text-white transition-colors" href="#"><span
+                                    class="material-symbols-outlined text-xl">public</span></a> <a
+                                class="hover:text-white transition-colors" href="#"><span
+                                    class="material-symbols-outlined text-xl">alternate_email</span></a> </div>
+                    </div>
+                </div>
+                <div
+                    class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+                    <p>© 2026 Extreme Digital Creations. All rights reserved.</p>
+                    <div class="flex gap-6"> <a class="hover:text-white" href="#">Privacy Policy</a> <a
+                            class="hover:text-white" href="#">Terms of Service</a> </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
