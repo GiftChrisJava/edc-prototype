@@ -15,7 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
     <script
-        id="tailwind-config"> tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary": "#004a86", "background-light": "#f5f7f8", "background-dark": "#0f1a23", }, fontFamily: { "display": ["Inter", "sans-serif"], "sans": ["Inter", "sans-serif"], }, borderRadius: { "DEFAULT": "0.375rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, }, }, } </script>
+        id="tailwind-config"> tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary": "#004a86", "accent": "#c31718", "background-light": "#f5f7f8", "background-dark": "#0f1a23", }, fontFamily: { "display": ["Inter", "sans-serif"], "sans": ["Inter", "sans-serif"], }, borderRadius: { "DEFAULT": "0.375rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, }, }, } </script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -34,16 +34,22 @@
                                 d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
                                 fill="currentColor"></path>
                         </svg> </div>
-                    <h2 class="text-lg md:text-xl font-bold leading-tight tracking-tight">Extreme Business Solutions</h2>
+                    <h2 class="text-lg md:text-xl font-bold leading-tight tracking-tight">Extreme Business Solutions
+                    </h2>
                 </div>
                 <div class="hidden lg:flex items-center gap-8">
                     <nav class="flex items-center gap-8">
-                    <a href="index.html" class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">Home</a>
-                    <a href="services.html" class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">Services</a>
-                    <a href="about.html" class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">About</a>
-                    <a href="portfolio.html" class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">Portfolio</a>
-                    <a href="contact.html" class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">Contact</a>
-                </nav> <a href="contact.html"
+                        <a href="index.html"
+                            class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">Home</a>
+                        <a href="services.html"
+                            class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">Services</a>
+                        <a href="about.html"
+                            class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">About</a>
+                        <a href="portfolio.html"
+                            class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">Portfolio</a>
+                        <a href="contact.html"
+                            class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">Contact</a>
+                    </nav> <a href="contact.html"
                         class="flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold tracking-wide shadow-sm"><span>Get
                             in Touch</span></a>
                 </div> <!-- Mobile Menu Icon -->
@@ -51,12 +57,12 @@
                         class="material-symbols-outlined">menu</span> </div>
             </div>
         </header> <!-- Hero Section -->
-        <div class="relative w-full bg-slate-900 overflow-hidden"> <!-- Background Image with Overlay -->
+        <div class="relative w-full bg-primary overflow-hidden"> <!-- Background Image with Overlay -->
             <div class="absolute inset-0 z-0"> <img alt="Diverse team collaborating in a modern office space"
                     class="w-full h-full object-cover opacity-30"
                     data-alt="Abstract view of modern corporate architecture and glass windows"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWdRCZ0ApY7l3eaEkIrzJwtWVAWW841Tio5ogkAM1SbKRrDcDDbgtYFiMzeX3FaAXxFM8P0yvD14XNNuqoUYpOXm0G65fwW6n7Gk5v-2fQQDvJWgK3F_DHel2uMGSJWP-nYe6wrrBYwqBP9_O4tZdIz3-47X0uMigYxlM9IT9kVPVjRhzqNnAtGZWnK3QO3wngNrsdK-iq3qmNQZCDsV_P3Fkx6360g8_C7H2qZabdffQsGoq7x6L5JyBwdCZKB7zYrNXs_9Vr_oW1" />
-                <div class="absolute inset-0 bg-gradient-to-b from-slate-900/50 to-slate-900/90"></div>
+                <div class="absolute inset-0 bg-gradient-to-b from-primary/50 to-primary/90"></div>
             </div>
             <div
                 class="relative z-10 px-4 md:px-10 lg:px-40 py-20 md:py-32 flex flex-col items-center justify-center text-center max-w-[1440px] mx-auto">
@@ -67,7 +73,7 @@
                     digital excellence in Malawi through strategic design, robust technology, and visionary leadership.
                     Meet the minds behind the pixels. </p>
                 <div class="flex gap-4"> <a href="contact.html"
-                        class="flex items-center justify-center rounded-lg h-12 px-8 bg-primary hover:bg-primary/90 text-white text-base font-bold transition-all shadow-lg hover:shadow-primary/25"><span>Join
+                        class="flex items-center justify-center rounded-lg h-12 px-8 bg-accent hover:bg-red-700 text-white text-base font-bold transition-all shadow-lg hover:shadow-red-500/25"><span>Join
                             the Team</span></a> <a href="about.html"
                         class="flex items-center justify-center rounded-lg h-12 px-8 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 text-white text-base font-bold transition-all"><span>About
                             Our Culture</span></a> </div>
@@ -259,7 +265,7 @@
                 </div>
             </div>
         </div> <!-- CTA Section -->
-        <div class="relative py-20 bg-slate-900 overflow-hidden"> <!-- Abstract graphic elements -->
+        <div class="relative py-20 bg-primary overflow-hidden"> <!-- Abstract graphic elements -->
             <div
                 class="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2">
             </div>

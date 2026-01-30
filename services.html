@@ -17,11 +17,11 @@
         rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script
-        id="tailwind-config"> tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary": "#004a86", "background-light": "#f5f7f8", "background-dark": "#0f1a23", "text-main": "#0c151d", "text-muted": "#4577a1", }, fontFamily: { "display": ["Inter", "sans-serif"] }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, }, }, } </script>
+        id="tailwind-config"> tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary": "#004a86", "accent": "#c31718", "background-light": "#f5f7f8", "background-dark": "#0f1a23", "text-main": "#0c151d", "text-muted": "#4577a1", }, fontFamily: { "display": ["Inter", "sans-serif"] }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, }, }, } </script>
 </head>
 
-<body class="bg-background-light font-display text-text-main antialiased overflow-x-hidden flex flex-col min-h-screen">
-    <!-- Top Navigation -->
+<body class="bg-background-light font-display text-slate-900 antialiased overflow-x-hidden flex flex-col min-h-screen">
+    <!-- Top Navigation Social Projects -->
     <header class="border-b border-slate-200 bg-white sticky top-0 z-50">
         <div class="max-w-[1280px] mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
             <div class="flex items-center gap-4">
@@ -31,32 +31,37 @@
                             d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
                             fill="currentColor"></path>
                     </svg> </div>
-                <h2 class="text-text-main text-lg font-bold tracking-tight hidden sm:block">Extreme Business Solutions
+                <h2 class="text-slate-900 text-lg font-bold tracking-tight hidden sm:block">Extreme Business Solutions
                 </h2>
             </div>
             <nav class="hidden md:flex items-center gap-8">
-                    <a href="index.html" class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">Home</a>
-                    <a href="services.html" class="text-primary text-sm font-bold">Services</a>
-                    <a href="about.html" class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">About</a>
-                    <a href="portfolio.html" class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">Portfolio</a>
-                    <a href="contact.html" class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">Contact</a>
-                </nav>
-            <div class="md:hidden"> <span class="material-symbols-outlined text-text-main cursor-pointer">menu</span>
+                <a href="index.html"
+                    class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">Home</a>
+                <a href="services.html" class="text-primary text-sm font-bold">Services</a>
+                <a href="about.html"
+                    class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">About</a>
+                <a href="portfolio.html"
+                    class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">Portfolio</a>
+                <a href="contact.html"
+                    class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">Contact</a>
+            </nav>
+            <div class="md:hidden"> <span class="material-symbols-outlined text-slate-900 cursor-pointer">menu</span>
             </div>
         </div>
     </header>
     <main class="flex-grow flex flex-col items-center">
         <div class="w-full max-w-[1280px] px-6 lg:px-10 py-5"> <!-- Breadcrumbs -->
             <div class="flex flex-wrap items-center gap-2 py-4 text-sm"> <a
-                    class="text-text-muted hover:text-primary font-medium transition-colors" href="index.html">Home</a>
-                <span class="material-symbols-outlined text-text-muted text-[16px]">chevron_right</span> <span
-                    class="text-text-main font-medium">Services</span> </div> <!-- Page Heading -->
+                    class="text-slate-600 hover:text-primary font-medium transition-colors" href="index.html">Home</a>
+                <span class="material-symbols-outlined text-slate-600 text-[16px]">chevron_right</span> <span
+                    class="text-slate-900 font-medium">Services</span>
+            </div> <!-- Page Heading -->
             <div class="py-12 md:py-16 grid grid-cols-12 gap-6">
                 <div class="col-span-12 md:col-span-8 lg:col-span-7 flex flex-col gap-4">
                     <h1
-                        class="text-text-main text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-[-0.033em]">
+                        class="text-slate-900 text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-[-0.033em]">
                         Our Expertise.<br /> <span class="text-primary">Structured for Impact.</span> </h1>
-                    <p class="text-text-muted text-lg md:text-xl font-normal leading-relaxed max-w-2xl mt-2"> Designing
+                    <p class="text-slate-600 text-lg md:text-xl font-normal leading-relaxed max-w-2xl mt-2"> Designing
                         the Future of Malawi through strategic branding, media, and spatial design. </p>
                 </div>
             </div> <!-- Services Grid -->
@@ -66,14 +71,15 @@
                         class="group relative flex flex-col gap-6 rounded-xl border border-slate-200 bg-white p-8 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
                         <div
                             class="w-12 h-12 flex items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                            <span class="material-symbols-outlined text-[28px]">business_center</span> </div>
+                            <span class="material-symbols-outlined text-[28px]">business_center</span>
+                        </div>
                         <div class="flex flex-col gap-3 flex-1">
-                            <h2 class="text-text-main text-xl font-bold leading-tight">Extreme Business Solutions</h2>
-                            <p class="text-text-muted text-sm leading-relaxed"> Strategic branding and digital
+                            <h2 class="text-slate-900 text-xl font-bold leading-tight">Extreme Business Solutions</h2>
+                            <p class="text-slate-600 text-sm leading-relaxed"> Strategic branding and digital
                                 transformation for enterprise growth. We build the systems that scale your vision. </p>
                         </div>
                         <div
-                            class="flex items-center text-primary font-bold text-sm mt-auto group-hover:translate-x-1 transition-transform">
+                            class="flex items-center text-accent font-bold text-sm mt-auto group-hover:translate-x-1 transition-transform">
                             Learn more <span class="material-symbols-outlined text-[16px] ml-1">arrow_forward</span>
                         </div>
                     </div> <!-- Card 2 -->
@@ -81,14 +87,15 @@
                         class="group relative flex flex-col gap-6 rounded-xl border border-slate-200 bg-white p-8 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
                         <div
                             class="w-12 h-12 flex items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                            <span class="material-symbols-outlined text-[28px]">shutter_speed</span> </div>
+                            <span class="material-symbols-outlined text-[28px]">shutter_speed</span>
+                        </div>
                         <div class="flex flex-col gap-3 flex-1">
-                            <h2 class="text-text-main text-xl font-bold leading-tight">Extreme Lens</h2>
-                            <p class="text-text-muted text-sm leading-relaxed"> High-fidelity photography and
+                            <h2 class="text-slate-900 text-xl font-bold leading-tight">Extreme Lens</h2>
+                            <p class="text-slate-600 text-sm leading-relaxed"> High-fidelity photography and
                                 videography that tells your story. Capturing moments with cinematic precision. </p>
                         </div>
                         <div
-                            class="flex items-center text-primary font-bold text-sm mt-auto group-hover:translate-x-1 transition-transform">
+                            class="flex items-center text-accent font-bold text-sm mt-auto group-hover:translate-x-1 transition-transform">
                             Learn more <span class="material-symbols-outlined text-[16px] ml-1">arrow_forward</span>
                         </div>
                     </div> <!-- Card 3 -->
@@ -96,15 +103,16 @@
                         class="group relative flex flex-col gap-6 rounded-xl border border-slate-200 bg-white p-8 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
                         <div
                             class="w-12 h-12 flex items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                            <span class="material-symbols-outlined text-[28px]">chair</span> </div>
+                            <span class="material-symbols-outlined text-[28px]">chair</span>
+                        </div>
                         <div class="flex flex-col gap-3 flex-1">
-                            <h2 class="text-text-main text-xl font-bold leading-tight">Extreme Interiors &amp; Furniture
+                            <h2 class="text-slate-900 text-xl font-bold leading-tight">Extreme Interiors &amp; Furniture
                             </h2>
-                            <p class="text-text-muted text-sm leading-relaxed"> Bespoke office layouts and furniture
+                            <p class="text-slate-600 text-sm leading-relaxed"> Bespoke office layouts and furniture
                                 design for productive environments. We shape spaces that inspire work. </p>
                         </div>
                         <div
-                            class="flex items-center text-primary font-bold text-sm mt-auto group-hover:translate-x-1 transition-transform">
+                            class="flex items-center text-accent font-bold text-sm mt-auto group-hover:translate-x-1 transition-transform">
                             Learn more <span class="material-symbols-outlined text-[16px] ml-1">arrow_forward</span>
                         </div>
                     </div> <!-- Card 4 -->
@@ -112,14 +120,15 @@
                         class="group relative flex flex-col gap-6 rounded-xl border border-slate-200 bg-white p-8 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
                         <div
                             class="w-12 h-12 flex items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                            <span class="material-symbols-outlined text-[28px]">confirmation_number</span> </div>
+                            <span class="material-symbols-outlined text-[28px]">confirmation_number</span>
+                        </div>
                         <div class="flex flex-col gap-3 flex-1">
-                            <h2 class="text-text-main text-xl font-bold leading-tight">Extreme Events </h2>
-                            <p class="text-text-muted text-sm leading-relaxed"> End-to-end corporate event management
+                            <h2 class="text-slate-900 text-xl font-bold leading-tight">Extreme Events </h2>
+                            <p class="text-slate-600 text-sm leading-relaxed"> End-to-end corporate event management
                                 and experiential marketing. From concept to execution, we handle it all. </p>
                         </div>
                         <div
-                            class="flex items-center text-primary font-bold text-sm mt-auto group-hover:translate-x-1 transition-transform">
+                            class="flex items-center text-accent font-bold text-sm mt-auto group-hover:translate-x-1 transition-transform">
                             Learn more <span class="material-symbols-outlined text-[16px] ml-1">arrow_forward</span>
                         </div>
                     </div> <!-- Card 5 -->
@@ -127,21 +136,22 @@
                         class="group relative flex flex-col gap-6 rounded-xl border border-slate-200 bg-white p-8 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1 md:col-span-2 lg:col-span-2">
                         <div
                             class="w-12 h-12 flex items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                            <span class="material-symbols-outlined text-[28px]">volunteer_activism</span> </div>
+                            <span class="material-symbols-outlined text-[28px]">volunteer_activism</span>
+                        </div>
                         <div class="flex flex-col gap-3 flex-1">
-                            <h2 class="text-text-main text-xl font-bold leading-tight">Social Projects </h2>
-                            <p class="text-text-muted text-sm leading-relaxed max-w-xl"> Community-driven initiatives
+                            <h2 class="text-slate-900 text-xl font-bold leading-tight">Social Projects </h2>
+                            <p class="text-slate-600 text-sm leading-relaxed max-w-xl"> Community-driven initiatives
                                 building a better Malawi. We believe in giving back and creating sustainable social
                                 impact through design and technology. </p>
                         </div>
                         <div
-                            class="flex items-center text-primary font-bold text-sm mt-auto group-hover:translate-x-1 transition-transform">
+                            class="flex items-center text-accent font-bold text-sm mt-auto group-hover:translate-x-1 transition-transform">
                             Learn more <span class="material-symbols-outlined text-[16px] ml-1">arrow_forward</span>
                         </div>
                     </div>
                 </div>
             </div> <!-- CTA Section -->
-            <div class="py-20 md:py-28">
+            <div class="py-20 md:py-28 bg-primary text-white">
                 <div
                     class="relative overflow-hidden rounded-2xl bg-white border border-slate-100 px-8 py-16 md:px-16 md:py-20 text-center shadow-lg shadow-slate-200/50">
                     <!-- Abstract Background Pattern -->
@@ -151,13 +161,15 @@
                         data-alt="Abstract blue glow effect"></div>
                     <div class="relative z-10 flex flex-col items-center gap-6">
                         <h2
-                            class="text-text-main text-3xl md:text-4xl font-black tracking-tight max-w-2xl leading-tight">
+                            class="text-slate-900 text-3xl md:text-4xl font-black tracking-tight max-w-2xl leading-tight">
                             Ready to transform your vision? </h2>
-                        <p class="text-text-muted text-base md:text-lg max-w-lg"> Let's discuss how our
+                        <p class="text-slate-600 text-base md:text-lg max-w-lg"> Let's discuss how our
                             multidisciplinary approach can elevate your brand to the next level. </p>
                         <div class="pt-4 flex flex-col sm:flex-row gap-4 w-full sm:w-auto"> <a href="portfolio.html"
-                                class="inline-flex h-12 items-center justify-center rounded-lg bg-primary px-8 text-sm font-bold text-white shadow-lg shadow-primary/20 transition-all hover:bg-primary/90 hover:shadow-primary/30 hover:-translate-y-0.5 w-full sm:w-auto">View Portfolio</a> <a href="contact.html"
-                                class="inline-flex h-12 items-center justify-center rounded-lg border border-slate-200 bg-transparent px-8 text-sm font-bold text-text-main transition-all hover:bg-slate-50 w-full sm:w-auto">Contact Us</a> </div>
+                                class="inline-flex h-12 items-center justify-center rounded-lg bg-accent px-8 text-sm font-bold text-white shadow-lg shadow-red-500/20 transition-all hover:bg-red-700 hover:shadow-xl hover:shadow-red-500/30 hover:-translate-y-0.5 w-full sm:w-auto">View
+                                Portfolio</a> <a href="contact.html"
+                                class="inline-flex h-12 items-center justify-center rounded-lg border border-slate-200 bg-transparent px-8 text-sm font-bold text-slate-900 transition-all hover:bg-slate-50 w-full sm:w-auto">Contact
+                                Us</a> </div>
                     </div>
                 </div>
             </div>
@@ -167,41 +179,40 @@
         <div class="max-w-[1280px] mx-auto px-6 lg:px-10">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16"> <!-- Brand -->
                 <div class="flex flex-col gap-6">
-                    <div class="flex items-center gap-3 text-text-main">
+                    <div class="flex items-center gap-3 text-slate-900">
                         <div class="size-6 text-primary"> <svg fill="none" viewbox="0 0 48 48"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
                                     fill="currentColor"></path>
-                            </svg> </div> <span class="font-bold text-lg tracking-tight">Extreme Digital
-                            Creations</span>
+                            </svg> </div> <span class="font-bold text-lg tracking-tight">Extreme Business
+                            Solutions</span>
                     </div>
-                    <p class="text-text-muted text-sm leading-relaxed"> A modern corporate creative agency dedicated to
+                    <p class="text-slate-600 text-sm leading-relaxed"> A modern corporate creative agency dedicated to
                         structured impact and digital excellence in Malawi. </p>
                 </div> <!-- Links 1 -->
                 <div class="flex flex-col gap-4">
-                    <h4 class="text-text-main font-bold text-sm uppercase tracking-wider">Services</h4> <a
-                        class="text-text-muted hover:text-primary text-sm transition-colors" href="#">Business
-                        Solutions</a> <a class="text-text-muted hover:text-primary text-sm transition-colors"
+                    <h4 class="text-slate-900 font-bold text-sm uppercase tracking-wider">Services</h4> <a
+                        class="text-slate-600 hover:text-primary text-sm transition-colors" href="#">Business
+                        Solutions</a> <a class="text-slate-600 hover:text-primary text-sm transition-colors"
                         href="services.html">Extreme Lens</a> <a
-                        class="text-text-muted hover:text-primary text-sm transition-colors" href="#">Interiors &amp;
-                        Furniture</a> <a class="text-text-muted hover:text-primary text-sm transition-colors"
+                        class="text-slate-600 hover:text-primary text-sm transition-colors" href="#">Interiors &amp;
+                        Furniture</a> <a class="text-slate-600 hover:text-primary text-sm transition-colors"
                         href="services.html">Extreme Events</a>
                 </div> <!-- Links 2 -->
                 <div class="flex flex-col gap-4">
-                    <h4 class="text-text-main font-bold text-sm uppercase tracking-wider">Company</h4> <a
-                        class="text-text-muted hover:text-primary text-sm transition-colors" href="about.html">About
-                        Us</a> <a class="text-text-muted hover:text-primary text-sm transition-colors"
+                    <h4 class="text-slate-900 font-bold text-sm uppercase tracking-wider">Company</h4> <a
+                        class="text-slate-600 hover:text-primary text-sm transition-colors" href="about.html">About
+                        Us</a> <a class="text-slate-600 hover:text-primary text-sm transition-colors"
                         href="portfolio.html">Portfolio</a> <a
-                        class="text-text-muted hover:text-primary text-sm transition-colors"
-                        href="team.html">Careers</a> <a
-                        class="text-text-muted hover:text-primary text-sm transition-colors"
+                        class="text-slate-600 hover:text-primary text-sm transition-colors" href="team.html">Careers</a>
+                    <a class="text-slate-600 hover:text-primary text-sm transition-colors"
                         href="contact.html">Contact</a>
                 </div> <!-- Contact -->
                 <div class="flex flex-col gap-4">
-                    <h4 class="text-text-main font-bold text-sm uppercase tracking-wider">Get in Touch </h4>
-                    <p class="text-text-muted text-sm">Lilongwe, Malawi</p> <a
-                        class="text-text-muted hover:text-primary text-sm transition-colors"
+                    <h4 class="text-slate-900 font-bold text-sm uppercase tracking-wider">Get in Touch </h4>
+                    <p class="text-slate-600 text-sm">Lilongwe, Malawi</p> <a
+                        class="text-slate-600 hover:text-primary text-sm transition-colors"
                         href="mailto:hello@extremedigital.mw">hello@extremedigital.mw</a>
                     <div class="flex gap-4 mt-2"> <a class="text-slate-400 hover:text-primary transition-colors"
                             href="#"> <span class="sr-only">Facebook</span> <!-- Social placeholder -->

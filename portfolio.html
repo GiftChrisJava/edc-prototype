@@ -15,7 +15,7 @@
         rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script
-        id="tailwind-config"> tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary": "#004a86", "background-light": "#f5f7f8", "background-dark": "#0f1a23", }, fontFamily: { "display": ["Inter", "sans-serif"] }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, }, }, } </script>
+        id="tailwind-config"> tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary": "#004a86", "accent": "#c31718", "background-light": "#f5f7f8", "background-dark": "#0f1a23", }, fontFamily: { "display": ["Inter", "sans-serif"] }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, }, }, } </script>
     <style>
         /* Custom Masonry support since Tailwind Grid doesn't natively do true masonry without JS or plugins */
         .masonry-grid {
@@ -51,47 +51,53 @@
     </style>
 </head>
 
-<body class="bg-background-light font-display text-[#0c151d] overflow-x-hidden min-h-screen flex flex-col">
+<body class="bg-white font-display text-[#0c151d] overflow-x-hidden min-h-screen flex flex-col">
     <!-- Top Navigation -->
-    <header class="sticky top-0 z-50 w-full bg-background-light/90 backdrop-blur-md border-b border-[#e6eef4]">
+    <header class="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-[#e6eef4]">
         <div class="px-4 md:px-10 py-4 flex items-center justify-between max-w-[1440px] mx-auto">
             <div class="flex items-center gap-3">
                 <div class="w-8 h-8 text-primary flex items-center justify-center"> <span
                         class="material-symbols-outlined text-3xl">diamond</span> </div>
-                <h2 class="text-[#0c151d] text-lg font-bold leading-tight tracking-tight">Extreme Business Solutions</h2>
+                <h2 class="text-[#0c151d] text-lg font-bold leading-tight tracking-tight">Extreme Business Solutions
+                </h2>
             </div>
             <nav class="hidden md:flex items-center gap-8">
-                    <a href="index.html" class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">Home</a>
-                    <a href="services.html" class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">Services</a>
-                    <a href="about.html" class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">About</a>
-                    <a href="portfolio.html" class="text-primary text-sm font-bold">Portfolio</a>
-                    <a href="contact.html" class="text-slate-600 hover:text-primary text-sm font-medium transition-colors">Contact</a>
-                </nav>
+                <a href="index.html"
+                    class="text-slate-200 hover:text-primary text-sm font-medium transition-colors">Home</a>
+                <a href="services.html"
+                    class="text-slate-200 hover:text-primary text-sm font-medium transition-colors">Services</a>
+                <a href="about.html"
+                    class="text-slate-200 hover:text-primary text-sm font-medium transition-colors">About</a>
+                <a href="portfolio.html" class="text-primary text-sm font-bold">Portfolio</a>
+                <a href="contact.html"
+                    class="text-slate-200 hover:text-primary text-sm font-medium transition-colors">Contact</a>
+            </nav>
             <div class="hidden md:block"> <a href="contact.html"
-                    class="flex cursor-pointer items-center justify-center rounded-lg h-10 px-6 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold shadow-sm">Get a Quote</a> </div>
+                    class="flex cursor-pointer items-center justify-center rounded-lg h-10 px-6 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold shadow-sm">Get
+                    a Quote</a> </div>
             <div class="md:hidden text-slate-800"> <span class="material-symbols-outlined text-3xl">menu</span> </div>
         </div>
     </header>
     <main class="flex-1 w-full max-w-[1440px] mx-auto px-4 md:px-10 py-12 flex flex-col"> <!-- Hero Section -->
-        <section class="mb-16 max-w-4xl">
-            <h1 class="text-slate-900 text-5xl md:text-6xl font-black leading-tight tracking-[-0.033em] mb-6"> Crafting
-                Digital <br /> <span class="text-primary">Excellence</span> in Malawi </h1>
-            <p class="text-slate-600 text-lg md:text-xl font-normal leading-relaxed max-w-2xl"> Explore our selected
+        <section class="mb-16 max-w-4xl bg-primary text-white p-8 md:p-12 rounded-2xl shadow-lg">
+            <h1 class="text-white text-5xl md:text-6xl font-black leading-tight tracking-[-0.033em] mb-6"> Crafting
+                Digital <br /> <span class="text-accent">Excellence</span> in Malawi </h1>
+            <p class="text-slate-200 text-lg md:text-xl font-normal leading-relaxed max-w-2xl"> Explore our selected
                 projects across branding, web design, and marketing. We build premium digital experiences for
                 forward-thinking companies. </p>
         </section> <!-- Filters -->
         <section
-            class="mb-12 sticky top-[73px] z-40 bg-background-light py-4 -mx-4 px-4 md:mx-0 md:px-0 border-b md:border-none border-slate-200 md:bg-transparent md:static">
+            class="mb-12 sticky top-[73px] z-40 bg-white py-4 -mx-4 px-4 md:mx-0 md:px-0 border-b md:border-none border-slate-200 md:bg-transparent md:static">
             <div class="flex gap-3 overflow-x-auto pb-2 md:pb-0 scrollbar-hide"> <button
-                    class="shrink-0 flex items-center justify-center rounded-full bg-primary text-white px-6 py-2.5 text-sm font-medium transition-transform active:scale-95 shadow-md">
+                    class="shrink-0 flex items-center justify-center rounded-full bg-accent text-white px-6 py-2.5 text-sm font-medium transition-transform active:scale-95 shadow-md">
                     All Projects </button> <button
-                    class="shrink-0 flex items-center justify-center rounded-full bg-white border border-slate-200 text-slate-600 hover:border-primary hover:text-primary px-6 py-2.5 text-sm font-medium transition-all active:scale-95">
+                    class="shrink-0 flex items-center justify-center rounded-full bg-white border border-slate-200 text-slate-200 hover:border-primary hover:text-primary px-6 py-2.5 text-sm font-medium transition-all active:scale-95">
                     Branding </button> <button
-                    class="shrink-0 flex items-center justify-center rounded-full bg-white border border-slate-200 text-slate-600 hover:border-primary hover:text-primary px-6 py-2.5 text-sm font-medium transition-all active:scale-95">
+                    class="shrink-0 flex items-center justify-center rounded-full bg-white border border-slate-200 text-slate-200 hover:border-primary hover:text-primary px-6 py-2.5 text-sm font-medium transition-all active:scale-95">
                     Web Development </button> <button
-                    class="shrink-0 flex items-center justify-center rounded-full bg-white border border-slate-200 text-slate-600 hover:border-primary hover:text-primary px-6 py-2.5 text-sm font-medium transition-all active:scale-95">
+                    class="shrink-0 flex items-center justify-center rounded-full bg-white border border-slate-200 text-slate-200 hover:border-primary hover:text-primary px-6 py-2.5 text-sm font-medium transition-all active:scale-95">
                     Digital Marketing </button> <button
-                    class="shrink-0 flex items-center justify-center rounded-full bg-white border border-slate-200 text-slate-600 hover:border-primary hover:text-primary px-6 py-2.5 text-sm font-medium transition-all active:scale-95">
+                    class="shrink-0 flex items-center justify-center rounded-full bg-white border border-slate-200 text-slate-200 hover:border-primary hover:text-primary px-6 py-2.5 text-sm font-medium transition-all active:scale-95">
                     Video Production </button> </div>
         </section> <!-- Masonry Grid -->
         <section class="masonry-grid w-full"> <!-- Item 1: Large Landscape -->
@@ -196,30 +202,30 @@
                                 class="material-symbols-outlined text-3xl">diamond</span> </div>
                         <h2 class="text-[#0c151d] text-lg font-bold">Extreme Business Solutions</h2>
                     </div>
-                    <p class="text-slate-600 leading-relaxed"> We help ambitious businesses in Malawi and beyond grow
+                    <p class="text-slate-200 leading-relaxed"> We help ambitious businesses in Malawi and beyond grow
                         through strategic design, development, and digital marketing. </p>
                 </div>
                 <div class="flex flex-wrap gap-12 md:gap-24">
                     <div class="flex flex-col gap-4">
                         <h4 class="text-[#0c151d] font-bold text-sm uppercase tracking-wider">Company </h4> <a
-                            class="text-slate-600 hover:text-primary transition-colors" href="about.html">About Us</a>
-                        <a class="text-slate-600 hover:text-primary transition-colors" href="team.html">Careers</a> <a
-                            class="text-slate-600 hover:text-primary transition-colors" href="contact.html">Contact</a>
+                            class="text-slate-200 hover:text-primary transition-colors" href="about.html">About Us</a>
+                        <a class="text-slate-200 hover:text-primary transition-colors" href="team.html">Careers</a> <a
+                            class="text-slate-200 hover:text-primary transition-colors" href="contact.html">Contact</a>
                     </div>
                     <div class="flex flex-col gap-4">
                         <h4 class="text-[#0c151d] font-bold text-sm uppercase tracking-wider">Services </h4> <a
-                            class="text-slate-600 hover:text-primary transition-colors" href="services.html">Web
-                            Development</a> <a class="text-slate-600 hover:text-primary transition-colors"
-                            href="#">Branding</a> <a class="text-slate-600 hover:text-primary transition-colors"
+                            class="text-slate-200 hover:text-primary transition-colors" href="services.html">Web
+                            Development</a> <a class="text-slate-200 hover:text-primary transition-colors"
+                            href="#">Branding</a> <a class="text-slate-200 hover:text-primary transition-colors"
                             href="services.html">Digital Marketing</a>
                     </div>
                     <div class="flex flex-col gap-4">
                         <h4 class="text-[#0c151d] font-bold text-sm uppercase tracking-wider">Connect </h4>
                         <div class="flex gap-4"> <a
-                                class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all"
+                                class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-200 hover:bg-primary hover:text-white transition-all"
                                 href="#"> <!-- Replace with social icons if needed, using material for now --> <span
                                     class="material-symbols-outlined text-lg">public</span> </a> <a
-                                class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all"
+                                class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-200 hover:bg-primary hover:text-white transition-all"
                                 href="#"> <span class="material-symbols-outlined text-lg">mail</span> </a> </div>
                     </div>
                 </div>
